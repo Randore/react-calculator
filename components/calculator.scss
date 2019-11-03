@@ -1,0 +1,52 @@
+#calApp{
+  max-width: 287px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #414141;
+  border-radius: 1.2rem;
+  padding: 1.2em .5em;
+
+  .show-cals, .cal-results{
+    display: flex;
+    justify-content: end;
+    margin: 1rem 1.45rem;
+    letter-spacing: 1px;
+  }
+  .cal-results{
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(161, 161, 151, 0.5); 
+  }
+}
+
+.bg-black{
+  color: #fff;
+}
+
+.cal-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  .cell {
+    cursor: pointer;
+    color:#A1A197;
+    text-align: center;
+    padding: .8rem 1.25rem;    
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:nth-last-child(4n + 1){
+      color: #F06E6E;
+    }
+
+    &.equals{
+      width: 10px;
+      height: 22px;
+      color: #fff;
+      background: #F06E6E;
+      border-radius: 2.5em;
+      justify-self: center;
+      box-shadow: 1px 1px 4px #E5A2A0;
+    }
+  }
+}
